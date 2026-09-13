@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- Author: Alua Kurmanbay -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Booking form for Chaplin Mega Silk Way">
+    <meta name="author" content="Alua Kurmanbay">
+    <title>Chaplin Mega Silk Way | Booking</title>
+</head>
+
+<body>
+
+    <header>
+        <p><strong>Chaplin Mega Silk Way</strong></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="colophon.html">Colophon</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Book Your Movie Night</h1>
+
+        <section>
+            <h2>Reservation Request</h2>
+
+            <p>
+                This page demonstrates how a cinema booking form could collect
+                visitor information before selecting a movie session. The form
+                includes personal details, the preferred date, number of tickets,
+                seating preference and additional comments.
+            </p>
+
+            <p>
+                This is an educational project, so the form does not create a real
+                reservation or purchase a cinema ticket. Visitors should use the
+                official Chaplin Cinemas website for actual ticket availability
+                and payment.
+            </p>
+
+            <!-- The form is divided into fieldsets because personal details
+                 and movie preferences are two different groups of information. -->
+            <form action="#" method="post">
+
+                <!-- This form has no server-side processing yet,
+                     so submitted information is not actually sent or stored. -->
+
+                <fieldset>
+                    <legend>Visitor Information</legend>
+
+                    <p>
+                        <label for="name">Full Name:</label><br>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+7 700 000 00 00"
+                            required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Movie Preferences</legend>
+
+                    <p>
+                        <label for="movie">Choose a Movie:</label><br>
+
+                        <select id="movie" name="movie" required>
+                            <option value="">Select a movie</option>
+                            <option value="vyshka-2">Вышка 2</option>
+                            <option value="odyssey">ОДИССЕЯ</option>
+                            <option value="spider-man">Spider Man Brand New Day</option>
+                            <option value="14-kun">14 күн</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="date">Preferred Date:</label><br>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="tickets">Number of Tickets:</label><br>
+                        <input
+                            type="number"
+                            id="tickets"
+                            name="tickets"
+                            min="1"
+                            max="10"
+                            value="1"
+                            required>
+                    </p>
+
+                    <p>Preferred Seating:</p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="standard"
+                            name="seating"
+                            value="standard"
+                            required>
+
+                        <label for="standard">Standard</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="premium"
+                            name="seating"
+                            value="premium">
+
+                        <label for="premium">Premium</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="vip"
+                            name="seating"
+                            value="vip">
+
+                        <label for="vip">VIP</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="reminder"
+                            name="reminder">
+
+                        <label for="reminder">
+                            Send me a reminder before the screening
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Comments:</label><br>
+
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="5"
+                            cols="40"
+                            placeholder="Write your seating or booking preferences here"></textarea>
+                    </p>
+                </fieldset>
+
+                <!-- Separate submit and reset controls are provided so the visitor
+                     can either complete the form or clear all entered information. -->
+                <p>
+                    <input type="submit" value="Submit Request">
+                    <input type="reset" value="Reset Form">
+                </p>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Important</h2>
+
+            <p>
+                This booking form is only a demonstration for the Web Technologies
+                project. It is not connected to the official Chaplin ticket system,
+                and no payment is processed on this page.
+            </p>
+        </aside>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        <p>
+            Contact:
+            <a href="mailto:info@chaplin.kz">info@chaplin.kz</a>
+            
+        </p>
+
+        <p>&copy; 2026 Alua Kurmanbay &mdash; Chaplin Mega Silk Way</p>
+        <p>&lt;HTML&gt; &amp; Web Technologies &nbsp; Assignment 1</p>
+    </footer>
+
+</body>
+
+</html>
